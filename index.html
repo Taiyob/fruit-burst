@@ -20,6 +20,29 @@
             .font-lato{
                 font-family: 'Lato', sans-serif;
             }
+            .bg-opacities{
+                position: relative;
+                background-color: #000;
+            }
+
+            .bg-opacities::before{
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 0.5;
+                background: url("./images/team.png") no-repeat center center;
+                background-size: cover;
+            }
+            .content{
+                position: relative;
+                width: 100%;
+                height: 600px;
+            }
         </style>
         <script>
             tailwind.config = {
@@ -311,6 +334,102 @@
             <!-- Button Area End -->    
             </section>
             <!-- Deal of the day Area End -->
+            <!-- Team Area Start -->
+            <section>
+                <div class="carousel w-full">
+                    <div class="carousel-item relative bg-opacities w-full">
+                      <div class="content">
+                        <!-- <img src="./images/team.png" class="w-full" /> -->
+                      </div>  
+                      <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <h2 class="text-5xl font-extrabold mb-5 text-center text-white">
+                            Meet the team section
+                        </h2>
+                        <p class="mb-10 text-[#FFFFFF] lg:max-w-3xl mx-auto text-center">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                        <div class="px-48 grid grid-cols-4 gap-5">
+                            <div class="text-center">
+                                            <div class="avatar">
+                                                <div class="w-24 rounded-full">
+                                                <img src="./images/member1.png" />
+                                                </div>
+                                            </div>
+                                            <div class="space-y-3">
+                                                <h4 class="text-center text-white text-2xl font-bold">Awlad Hossain</h4>
+                                                <p class="text-center text-white text-base font-medium">Fruits Expert</p>
+                                                <ul class="menu-horizontal text-center">
+                                                <span class="gap-15">
+                                                    <a class="text-[#FFF] rounded-full p-1"> <i class=" fa-brands fa-facebook"></i></a>
+                                                    <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-square-twitter"></i></a>
+                                                    <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-linkedin"></i></a>
+                                                </span>
+                                            </ul>
+                                        </div>
+                            </div> 
+
+                            <div class="text-center">
+                                        <div class="avatar">
+                                            <div class="w-24 rounded-full">
+                                            <img src="./images/member2.png" />
+                                            </div>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <h4 class="text-center text-white text-2xl font-bold">Safia Chowdhury</h4>
+                                            <p class="text-center text-white text-base font-medium">Fruits Expert</p>
+                                            <ul class="menu-horizontal text-center">
+                                            <span class="gap-15">
+                                                <a class="text-[#FFF] rounded-full p-1"> <i class=" fa-brands fa-facebook"></i></a>
+                                                <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-square-twitter"></i></a>
+                                                <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-linkedin"></i></a>
+                                            </span>
+                                        </ul>
+                                    </div>
+                            </div> 
+
+                            <div class="text-center">
+                                    <div class="avatar">
+                                        <div class="w-24 rounded-full">
+                                        <img src="./images/member3.png" />
+                                        </div>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <h4 class="text-center text-white text-2xl font-bold">Rakib Hossain</h4>
+                                        <p class="text-center text-white text-base font-medium">Fruits Expert</p>
+                                        <ul class="menu-horizontal text-center">
+                                        <span class="gap-15">
+                                            <a class="text-[#FFF] rounded-full p-1"> <i class=" fa-brands fa-facebook"></i></a>
+                                            <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-square-twitter"></i></a>
+                                            <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-linkedin"></i></a>
+                                        </span>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="text-center">
+                                <div class="avatar">
+                                    <div class="w-24 rounded-full">
+                                    <img src="./images/member1.png" />
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <h4 class="text-center text-white text-2xl font-bold">Chaity</h4>
+                                    <p class="text-center text-white text-base font-medium">Fruits Expert</p>
+                                    <ul class="menu-horizontal text-center">
+                                    <span class="gap-15">
+                                        <a class="text-[#FFF] rounded-full p-1"> <i class=" fa-brands fa-facebook"></i></a>
+                                        <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-square-twitter"></i></a>
+                                        <a class="text-[#FFF] rounded-full p-1"><i class="fa-brands fa-linkedin"></i></a>
+                                    </span>
+                                </ul>
+                            </div>
+                        </div> 
+                        </div>
+                      </div>
+                    </div>    
+                  </div>
+            </section>
+            <!-- Team Area End -->
         </main>
         <footer>
             
